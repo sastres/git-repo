@@ -22,8 +22,8 @@ public class GameWindow extends JFrame {
 
     public static void main(String[] args) throws IOException {
         background = ImageIO.read(GameWindow.class.getResourceAsStream("background.png")); //add source images
-        drop = ImageIO.read(GameWindow.class.getResourceAsStream("drop.png"));
-        game_over = ImageIO.read(GameWindow.class.getResourceAsStream("game_over.png"));
+        drop = ImageIO.read(GameWindow.class.getResourceAsStream("drop.png")); //add source images
+        game_over = ImageIO.read(GameWindow.class.getResourceAsStream("game_over.png")); //add source images
         game_window = new GameWindow();
         game_window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         game_window.setLocation(200, 100);
@@ -42,7 +42,7 @@ public class GameWindow extends JFrame {
                 if (is_drop) {
                     drop_top = -100;
                     drop_left = (int) (Math.random() * (game_field.getWidth() - drop.getWidth(null)));
-                    drop_v = drop_v + 10;
+                    drop_v = drop_v + 10; // увеличиваем скорость падения капли
                     score++;
                     game_window.setTitle("Score " + score);
                 }
