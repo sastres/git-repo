@@ -15,13 +15,13 @@ public class GameWindow extends JFrame {
     private static Image drop;
     private static Image game_over;
     private static float drop_left = 200;
-    private static float drop_top = -100;
+    private static float drop_top = -100; //Выносим точку старта падения капли за пределы видимой области
     private static float drop_v = 200;
     private static int score;
 
 
     public static void main(String[] args) throws IOException {
-        background = ImageIO.read(GameWindow.class.getResourceAsStream("background.png"));
+        background = ImageIO.read(GameWindow.class.getResourceAsStream("background.png")); //add source images
         drop = ImageIO.read(GameWindow.class.getResourceAsStream("drop.png"));
         game_over = ImageIO.read(GameWindow.class.getResourceAsStream("game_over.png"));
         game_window = new GameWindow();
