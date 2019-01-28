@@ -26,7 +26,7 @@ public class Main { //публичный класс с именем Main
         boolean result4 = isNegative();
         System.out.println(result4);
         String result5 = greetings();
-        
+
 
     }
 
@@ -102,7 +102,6 @@ public class Main { //публичный класс с именем Main
         System.out.println("Привет " + name + "!");
         return name;
     }
-
 
 
 }
