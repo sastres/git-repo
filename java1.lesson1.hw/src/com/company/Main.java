@@ -27,7 +27,6 @@ public class Main { //публичный класс с именем Main
         System.out.println(result4);
         String result5 = greetings();
 
-
     }
 
      //Написать метод вычисляющий выражение a * (b + (c / d)) и возвращающий результат,
@@ -64,7 +63,6 @@ public class Main { //публичный класс с именем Main
         }
         System.out.println("Сумма этих чисел не входит в заданный диапазон");
         return false;
-
     }
 
     //Написать метод, которому в качестве параметра передается целое число, метод должен напечатать в консоль,
@@ -102,6 +100,5 @@ public class Main { //публичный класс с именем Main
         System.out.println("Привет " + name + "!");
         return name;
     }
-
 
 }
