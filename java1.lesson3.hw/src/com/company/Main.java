@@ -14,7 +14,7 @@ public class Main {
 
         startGame();
     }
-    static void startGame() {
+    static void startGame() { //Цикл запускающий/перезапускающий саму игру
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
         char answer;
@@ -37,7 +37,7 @@ public class Main {
         } while (!exit);
     }
 
-    private static void game() {
+    private static void game() { //Непосредственно игра "Угадай число"
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         int generate = random.nextInt(10);
