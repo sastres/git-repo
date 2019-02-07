@@ -2,15 +2,15 @@ public class Employee {
     private String fullName;
     private String position;
     private String email;
-    private String phone;
+    private String phoneNumber;
     private double salary;
     private int age;
 
-    Employee(String fullName, String position, String email, String phone, double salary, int age) {
+    Employee(String fullName, String position, String email, String phoneNumber, double salary, int age) {
         this.fullName = fullName;
         this.position = position;
         this.email = email;
-        this.phone = phone;
+        this.phoneNumber = phoneNumber;
         this.salary = salary;
         this.age = age;
     }
@@ -30,7 +30,7 @@ public class Employee {
                 "full name='" + fullName + '\'' +
                 ", position='" + position + '\'' +
                 ", email='" + email + '\'' +
-                ", phone='" + phone + '\'' +
+                ", phone='" + phoneNumber + '\'' +
                 ", salary=" + salary +
                 ", age=" + age +
                 '}';
